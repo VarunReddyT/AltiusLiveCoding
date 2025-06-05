@@ -1,0 +1,5 @@
+*.class
+*.docx
+*node_modules
+.github
+.pdf
