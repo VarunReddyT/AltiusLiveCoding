@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import TodoList from "./components/TodoList"
 import Navbar from "./components/Navbar"
-import Login from "./components/Login"
-import Register from "./components/Register"
+import SearchTable from "./components/SearchTable"
 function App() {
   return (
     <Router>
       <Navbar/>
       <Routes>
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/register" element={<Register/>}/>
+        <Route path="/" element={<TodoList/>}/>
+        <Route path="/table" element={<SearchTable/>}/>
       </Routes>
     </Router>
   )
